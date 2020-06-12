@@ -5,7 +5,7 @@ import javax.persistence.*;
 import java.math.BigInteger;
 
 @Entity
-@Table(name=Orders)
+@Table(name="order")
 public class Order {
 
     @Id

@@ -8,19 +8,24 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-@Table
+@Table(name="customer")
 public class Customer {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private BigInteger custcode;
-    private NVarcharTypeDescriptor custcountry;
+
+    @Column(nullable=false)
     private String custname;
+
+
+    private String custcountry;
     private String custcity;
     private String grade;
     private double openingamt;
     private double recieveamt;
     private double outstandingamt;
     private String phone;
+    @
     private Long agentcode;
 
 
